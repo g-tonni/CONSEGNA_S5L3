@@ -19,9 +19,20 @@ body {
   color: #742305;
 }
 
+main {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+header {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
 #general-container {
-  padding: 0 20px;
-  padding-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -29,6 +40,7 @@ h1 {
   text-align: center;
   padding: 30px 100px;
   padding-bottom: 10px;
+  font-size: 2em;
 }
 
 h3 {
@@ -128,6 +140,7 @@ ul {
   font-weight: 600;
   text-align: center;
   font-size: 1.2em;
+  margin-bottom: 6px;
 }
 
 .card-price {
@@ -181,6 +194,117 @@ article img {
   margin-bottom: 18px;
 }
 
+/* ----------------------------------- TABLET */
+
+@media screen and (min-width: 576px) {
+  header {
+    padding: 0;
+  }
+
+  nav {
+    border-radius: 0;
+  }
+
+  ul {
+    flex-wrap: nowrap;
+  }
+
+  .menu-element {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    order: 0;
+    width: auto;
+    font-size: 0.9em;
+  }
+
+  .shop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+    font-size: 1.5em;
+    order: 0;
+    width: auto;
+  }
+
+  .shop img {
+    width: 45px;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: 0;
+    font-size: 2.5em;
+  }
+
+  h3 {
+    text-align: left;
+    padding-left: 0;
+    font-size: 2em;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .product {
+    padding: 30px;
+  }
+}
+
+/* ----------------------------------- MEDIUM */
+
+@media screen and (min-width: 768px) {
+  #general-container {
+    flex-direction: row;
+  }
+
+  header {
+    flex-grow: 1;
+    top: 0;
+    bottom: 0;
+  }
+
+  main {
+    flex-grow: 6;
+  }
+
+  nav {
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-element {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    order: 1;
+  }
+
+  .shop {
+    order: 0;
+  }
+}
+
+/* ----------------------------------- MEDIUM-LARGE */
+
 @media screen and (min-width: 992px) {
   article {
     background-color: #fef7e2;
@@ -201,4 +325,9 @@ article img {
     padding: 0 20px;
     order: 2;
   }
+}
+
+/* ----------------------------------- EXTRA-LARGE */
+
+@media screen and (min-width: 1200px) {
 }
