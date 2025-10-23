@@ -150,7 +150,6 @@ ul {
 
 .card-button {
   width: 50%;
-  height: 40px;
   border: none;
   border-radius: 50px;
   font-size: 1.1em;
@@ -159,6 +158,10 @@ ul {
   background-color: #ffdf7f;
   align-self: center;
   margin-bottom: 20px;
+}
+
+.card-description {
+  text-align: center;
 }
 
 .description {
@@ -314,6 +317,25 @@ article img {
 
   .card {
     width: 30%;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .product {
+    padding: 15px;
+  }
+
+  .card-price {
+    font-size: 1em;
+  }
+  .card-description {
+    font-size: 0.9em;
+  }
+
+  .card-button {
+    font-size: 1em;
   }
 
   #card-container {
